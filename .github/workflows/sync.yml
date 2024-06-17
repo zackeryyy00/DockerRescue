@@ -23,7 +23,7 @@ jobs:
       - name: Login to ACR
         uses: docker/login-action@v3
         with:
-          registry: registry.cn-shanghai.aliyuncs.com
+          registry: registry.cn-hangzhou.aliyuncs.com
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
   
