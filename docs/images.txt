@@ -1,2 +1,3 @@
 lobehub/lobe-chat
 yidadaa/chatgpt-next-web
+laoyutang/clash-and-dashboard:latest
