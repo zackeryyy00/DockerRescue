@@ -62,10 +62,10 @@ jobs:
             fi
             
             if [[ ${{ env.plf_exists }} == "true" ]]; then
-              acr_image_path="registry.cn-shanghai.aliyuncs.com/dockerip/$registry_image_name-${{ env.arch_name }}:$image_tag"
+              acr_image_path="registry.cn-hangzhou.aliyuncs.com/dockerip/$registry_image_name-${{ env.arch_name }}:$image_tag"
               docker pull --platform linux/${{ env.arch }} "$image"
             else
-              acr_image_path="registry.cn-shanghai.aliyuncs.com/dockerip/$registry_image_name:$image_tag"
+              acr_image_path="registry.cn-hangzhou.aliyuncs.com/dockerip/$registry_image_name:$image_tag"
               docker pull "$image"
             fi
             echo -n "<h3 style='color: #0074D9;'>↪ $acr_image_path</h3>" >> messages.html
